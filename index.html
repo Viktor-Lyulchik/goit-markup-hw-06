@@ -27,6 +27,7 @@
   </head>
 
   <body>
+    <!-- #region header -->
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -53,10 +54,90 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button
+            class="mobile-menu-button-close"
+            type="button"
+            data-menu-close
+          >
+            <svg class="mobile-menu-button-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a class="mobile-menu-link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="mobile-menu-link" href="">Portfolio</a>
+              </li>
+              <li><a class="mobile-menu-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-address-list">
+              <li>
+                <a
+                  class="mobile-menu-address-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mm-contact-links-list">
+            <li class="mm-contact-links-item">
+              <a class="mm-contact-frame" href="instagram">
+                <svg class="mm-contact-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mm-contact-links-item">
+              <a class="mm-contact-frame" href="twitter">
+                <svg class="mm-contact-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mm-contact-links-item">
+              <a class="mm-contact-frame" href="facebook">
+                <svg class="mm-contact-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mm-contact-links-item">
+              <a class="mm-contact-frame" href="linkedin">
+                <svg class="mm-contact-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+    <!-- #endregion header -->
 
     <main>
+      <!-- #region effective-solutions  -->
       <section class="section effective-solutions">
         <div class="container effective-solutions-contr">
           <h1 class="esolutions-hdr">Effective Solutions for Your Business</h1>
@@ -65,7 +146,9 @@
           </button>
         </div>
       </section>
+      <!-- #endregion effective-solutions  -->
 
+      <!-- #region features  -->
       <section class="section features">
         <div class="container features-contr">
           <h2 class="features-header-two visually-hidden">Our Features</h2>
@@ -121,7 +204,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion features  -->
 
+      <!-- #region team  -->
       <section class="section team">
         <div class="container team-contr">
           <h2 class="team-hdr-two">Our Team</h2>
@@ -278,7 +363,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion team  -->
 
+      <!-- #region portfolio  -->
       <section class="section portfolio">
         <div class="container">
           <h2 class="portfolio-header">Our Portfolio</h2>
@@ -394,9 +481,11 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion portfolio  -->
     </main>
 
-    <footer class="bottom">
+    <!-- #region bottom  -->
+    <footer class="bottom hidden">
       <div class="container bottom-contr">
         <div class="bottom-links-box">
           <a class="webstudio-link" href="./index.html"
@@ -464,9 +553,10 @@
         </div>
       </div>
     </footer>
+    <!-- #endregion bottom  -->
 
-    <!--region backdrop + modal -->
-    <div class="backdrop" data-modal>
+    <!-- #region backdrop + modal -->
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
@@ -522,18 +612,15 @@
 
           <div class="user-box textarea-box">
             <label class="label" for="user-comment">Comment</label>
-            <!-- <div class="input-box"> -->
             <textarea
               class="input-field txt-area"
               id="user-comment"
               placeholder="Text input"
               name="user-comment"
             ></textarea>
-            <!-- </div> -->
           </div>
 
           <div class="accept-checkbox-container">
-            <!-- id="accept-checkbox" -->
             <input
               class="accept-checkbox visually-hidden"
               id="user-privacy"
@@ -556,8 +643,9 @@
         </form>
       </div>
     </div>
-    <!-- endregion backdrop + modal -->
+    <!-- #endregion backdrop + modal -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
