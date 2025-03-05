@@ -494,6 +494,8 @@ button {
 
 @media screen and (min-width: 1158px) {
   .effective-solutions {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -972,9 +974,14 @@ button {
 
 .bottom-subscribe-form {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 16px; */
+}
+
+.lbl-subscribe {
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .subscribe-email {
@@ -1001,7 +1008,7 @@ button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   line-height: 1.5;
@@ -1062,8 +1069,19 @@ button {
   }
 
   .bottom-subscribe-form {
+    display: flex;
+    flex-direction: column;
+
     flex-direction: row;
     gap: 24px;
+  }
+
+  .lbl-subscribe {
+    margin-bottom: 0;
+  }
+
+  .subscribe-btn {
+    margin: 0;
   }
 }
 
